@@ -1,7 +1,9 @@
-import Vue from 'vue'
+import Vue from 'vue' 
 import App from './App.vue'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+
+Vue.component('SvgIcon', () => import('./components/SvgIcon.vue'))
 
 new Vue({
   render: h => h(App),
